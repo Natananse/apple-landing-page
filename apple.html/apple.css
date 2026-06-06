@@ -1,19 +1,69 @@
-header{
-    background-color: #000000;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+/* Reset defaults so everything behaves */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nav container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 980px;
-    margin: 0 auto;
-    flex-direction: column;
+
+body {
+  background-color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-a {
-    color: #fef9f9;
-    text-decoration: none;
-    margin: 0 15px;
+
+/* 1. The Main Header Wrapper */
+header {
+  width: 100%;
+  background-color: rgba(22, 22, 23, 0.8);
+}
+
+/* 2. Your nav-container class */
+.nav-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 22px;
+  height: 48px;
+}
+
+/* 3. YOUR UL TAG: This is the exact command that forces the elements horizontal */
+.logo ul {
+  display: flex;             /* Activates Flexbox Layout */
+  flex-direction: row;       /* COMMANDS items to align horizontally in a row */
+  justify-content: space-between; /* Spreads logo, words, and icons across the bar */
+  align-items: center;       /* Centers everything vertically */
+  height: 100%;
+  list-style: none;          /* Removes bullet points from <li> items */
+}
+
+/* Style for your text links inside the <li> tags */
+.logo ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.logo ul li a:hover {
+  color: #ffffff;
+}
+
+/* Fixes the sizing of your logo and icon images so they fit nicely inline */
+.logo ul img {
+  height: 16px;
+  width: auto;
+  display: block;
+}
+.logo ul img.nav-icon {
+  /* 1. Turn dark images into crisp white */
+  filter: invert(1) brightness(2); 
+  
+  /* 2. Maximize and control the size */
+  height: 20px; /* Increased from 16px to make them pop */
+  width: auto;
+  
+  /* Smooth opacity transition for a premium feel */
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}.logo ul img.nav-icon:hover 
+{
+  opacity: 1;
 }
