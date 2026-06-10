@@ -93,9 +93,13 @@ header {
    
 }
 .footer-container {
-  max-width: 1024px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: #522020;
+  color: #ffffff;
+}
+footer {
+  background-color: rgba(1, 1, 45, 0.8);
+  padding: 0px 20px;
 }
