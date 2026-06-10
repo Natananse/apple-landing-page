@@ -103,3 +103,12 @@ footer {
   background-color: rgba(1, 1, 45, 0.8);
   padding: 0px 20px;
 }
+.iphone {
+  display: flex;
+  justify-content:left;
+  margin-top: 20px;
+  width: 600px;
+  height: 310px;
+  mask-repeat: no-repeat;
+  margin-left: 150px;
+}
