@@ -112,7 +112,7 @@ footer {
   mask-repeat: no-repeat;
   margin-left: 150px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .main-container {
     margin: 20px auto;
     padding: 0 10px;
@@ -126,4 +126,9 @@ footer {
     height: auto;
     margin-left: 0;
   }
+}
+.iphone {
+  float: left;
+  width: 50px;
+  padding: 5px;
 }
