@@ -92,3 +92,10 @@ header {
   margin-top: 20px;
    
 }
+.footer-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #522020;
+}
