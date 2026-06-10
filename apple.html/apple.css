@@ -13,10 +13,10 @@ body {
 /* 1. The Main Header Wrapper */
 header {
   width: 100%;
-  background-color: rgba(22, 22, 23, 0.8);
+  background-color: rgba(37, 37, 98, 0.8);
   height: 48px;
   padding:  0 20px;
-}
+  }
 
 /* 2. Your nav-container class */
 .nav-container {
@@ -45,12 +45,12 @@ header {
 }
 
 .logo ul li a:hover {
-  color: #ffffff;
+  color: #535252;
 }
 
 /* Fixes the sizing of your logo and icon images so they fit nicely inline */
 .logo ul img {
-  height: 16px;
+  height: 24px;
   width: auto;
   display: block;
 }
@@ -65,15 +65,17 @@ header {
   /* Smooth opacity transition for a premium feel */
   opacity: 0.8;
   transition: opacity 0.2s ease;
-}.logo ul img.nav-icon:hover 
+}
+.logo ul img.nav-icon:hover 
 {
   opacity: 1;
 }
 .nat {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
+  align-items: left;
+  justify-content: left;
+  height: 16px;
+  img size: 24px;
 }
 /* Target only the apple logo using the new class */
 .logo ul img.apple-logo {
@@ -132,3 +134,9 @@ footer {
   width: 50px;
   padding: 5px;
 }
+.logo img {
+  height: 100px;
+  width: auto;
+  filter: invert(1) brightness(2); /* makes it white */
+}
+
