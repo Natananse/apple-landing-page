@@ -104,6 +104,8 @@ header {
 footer {
   background-color: rgba(1, 1, 45, 0.8);
   padding: 0px 20px;
+  display: flex;
+  justify-content: center;
 }
 .iphone {
   display: flex;
